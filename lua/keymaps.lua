@@ -14,3 +14,5 @@ keymap.set('n', '-', '<C-x>')
 -- <cmd>Telescope lsp_*
 keymap.set('n', 'gd', '<cmd>Telescope lsp_definitions<CR>')
 keymap.set('n', 'gr', '<cmd>Telescope lsp_references<CR>')
+
+keymap.set('n', '<F12>', vim.cmd.EslintFixAll)

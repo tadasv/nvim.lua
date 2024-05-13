@@ -28,5 +28,8 @@ return {
     lspconfig.templ.setup({
       capabilities = capabilities,
     })
+    lspconfig.eslint.setup({
+      capabilities = capabilities,
+    })
   end,
 }
