@@ -3,7 +3,7 @@ return {
   {
     "williamboman/mason-lspconfig.nvim",
     opts = {
-      ensure_installed = { "gopls", "tailwindcss", "lua_ls", "tsserver", "templ", "estlint" },
+      ensure_installed = { "gopls", "tailwindcss", "lua_ls", "tsserver", "templ", "eslint" },
     },
   },
 }
