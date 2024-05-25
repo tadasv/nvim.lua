@@ -20,3 +20,6 @@ vim.opt.smarttab = true
 vim.opt.scrolloff = 10
 
 vim.opt.backspace = 'start,eol,indent'
+
+-- use system clipboard for everything
+vim.opt.clipboard = 'unnamedplus'
