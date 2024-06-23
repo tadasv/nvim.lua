@@ -1,12 +1,11 @@
 return {
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    lazy = false,
+    "ellisonleao/gruvbox.nvim",
     priority = 1000,
+    config = true,
     opts = {},
     init = function()
-      vim.cmd([[colorscheme catppuccin]])
+      vim.cmd([[colorscheme gruvbox]])
     end,
   },
 }
