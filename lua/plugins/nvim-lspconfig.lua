@@ -13,6 +13,12 @@ return {
       capabilities = cmp.default_capabilities()
     end
 
+    lspconfig.denols.setup({
+      --on_attach = on_attach,
+      root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc"),
+      capabilities = capabilities,
+    })
+
     lspconfig.gopls.setup({
       capabilities = capabilities,
     })
@@ -52,7 +58,9 @@ return {
       }
     })
     lspconfig.ts_ls.setup({
+      root_dir = lspconfig.util.root_pattern("package.json"),
       capabilities = capabilities,
+      single_file_support = false,
     })
     lspconfig.templ.setup({
       capabilities = capabilities,
